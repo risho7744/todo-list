@@ -1,0 +1,71 @@
+.todoList__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background: linear-gradient(
+		90deg,
+		rgba(255, 118, 20, 1) 0%,
+		rgba(255, 84, 17, 1) 100%
+	);
+	min-height: 4rem;
+	width: 80%;
+	margin: 2rem auto;
+	padding: 0.5rem;
+	border-radius: 0.55rem;
+	transition: width 0.2s;
+}
+
+.todoList__item:hover {
+	width: 85%;
+}
+
+.complete {
+	text-decoration: line-through;
+	opacity: 0.9;
+}
+
+.todoList__item > div > input {
+	text-align: left;
+	background: transparent;
+	border: 0;
+	font-size: 1.4rem;
+	color: white;
+	margin: 1rem 0 0.1rem;
+	padding: 0;
+}
+
+.todoList__item > div > input:focus {
+	outline-style: none;
+}
+
+.todoList__item > div > p {
+	margin: 0;
+	text-align: left;
+	padding: 0.2rem;
+	font-size: 0.7rem;
+	color: #fff;
+}
+
+.todoList__item:nth-child(4n + 1) {
+	background: linear-gradient(
+		90deg,
+		rgba(93, 12, 255, 1) 0%,
+		rgba(155, 0, 250, 1) 100%
+	);
+}
+
+.todoList__item:nth-child(4n + 2) {
+	background: linear-gradient(
+		90deg,
+		rgba(255, 12, 241, 1) 0%,
+		rgba(250, 0, 135, 1) 100%
+	);
+}
+
+.todoList__item:nth-child(4n + 3) {
+	background: linear-gradient(
+		90deg,
+		rgba(20, 159, 255, 1) 0%,
+		rgba(17, 122, 255, 1) 100%
+	);
+}
